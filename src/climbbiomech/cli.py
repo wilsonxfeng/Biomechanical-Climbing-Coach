@@ -14,5 +14,7 @@ def main(fname: str, lname: str = "", formal: bool = False):
 	else:
 		print(f"Hello {fname} {lname}!")
 
+def ()
+
 if __name__ == "__main__":
     typer.run(main)
