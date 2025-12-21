@@ -1,4 +1,4 @@
-# ClimbBiomech Coach 🧗‍♂️
+# Biomechanical Climbing Coach 🧗‍♂️
 Video → Pose + Holds + Contacts → Movement Metrics → Coaching Feedback
 
 ClimbBiomech Coach analyzes a climbing video and produces:
