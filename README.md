@@ -1,4 +1,5 @@
-# ClimbBiomech Coach 🧗‍♂️
+# Biomechanical Climbing Coach 🧗‍♂️
+Video → Pose + Holds + Contacts → Movement Metrics → Coaching Feedback
 
 Biomechanical Climbing Coach analyzes a climbing video and produces:
 - an **annotated replay** (skeleton, holds, contact points, angles), and
