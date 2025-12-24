@@ -12,7 +12,6 @@ from climbbiomech.render.draw_joints import draw_joints
 
 
 model_path = Path(__file__).resolve().parents[2]/"landmark models"/"pose_landmarker_full.task"
-output_path = Path(__file__).resolve().parents[3]/"outputs"/"annotated.mp4"
 
 BaseOptions = mp.tasks.BaseOptions
 PoseLandmarker = mp.tasks.vision.PoseLandmarker

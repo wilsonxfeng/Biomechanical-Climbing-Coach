@@ -46,6 +46,35 @@ def draw_joints(frame, result):
 
 				cv2.circle(frame, coords, 10, color, 5)
 
+		elif PoseLandmarks[joint] == 26: # Right Knee
+			hip = pose[PoseLandmarks["RIGHT_HIP"]]
+			knee = pose[PoseLandmarks["RIGHT_KNEE"]]
+			ankle = pose[PoseLandmarks["RIGHT_ANKLE"]]
+			angle = calculate_elbow(hip, knee, ankle)
+
+			color = get_color(angle)
+
+			if knee.presence >= 0.5 and knee.visibility >= 0.4:
+
+				coords = [int(knee.x * W), int(knee.y * H)]
+
+				cv2.circle(frame, coords, 10, color, 5)
+
+		elif PoseLandmarks[joint] == 25: # Left Knee
+			hip = pose[PoseLandmarks["LEFT_HIP"]]
+			knee = pose[PoseLandmarks["LEFT_KNEE"]]
+			ankle = pose[PoseLandmarks["LEFT_ANKLE"]]
+			angle = calculate_elbow(hip, knee, ankle)
+
+			color = get_color(angle)
+
+			if knee.presence >= 0.5 and knee.visibility >= 0.4:
+
+				coords = [int(knee.x * W), int(knee.y * H)]
+
+				cv2.circle(frame, coords, 10, color, 5)
+
+
 		else:
 			joint_info = pose[PoseLandmarks[joint]]
 			x_px = int(joint_info.x * W)
