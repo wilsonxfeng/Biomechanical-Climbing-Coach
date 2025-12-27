@@ -1,1 +1,4 @@
 typer
+opencv-python
+numpy
+mediapipe
