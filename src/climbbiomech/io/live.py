@@ -28,8 +28,8 @@ options = PoseLandmarkerOptions(
 def main():
     cap = cv2.VideoCapture(0)  # 0 = default camera
 
-    if not cap.isOpened():
-        print("Error: Could not open camera.")
+    if not cap.isopened():
+        print("error: could not open camera.")
         return
 
     with PoseLandmarker.create_from_options(options) as landmarker:
